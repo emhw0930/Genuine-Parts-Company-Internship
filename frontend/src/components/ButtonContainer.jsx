@@ -50,6 +50,13 @@ const ButtonContainer = ({ seatNumber, initialLabel, placeholder, isHighlighted,
     // Determine if the current button label matches the search term
     const isMatched = searchTerm && buttonLabel.toLowerCase().includes(searchTerm.toLowerCase());
 
+    // // Set isEditing to true if isMatched is true
+    // useEffect(() => {
+    //     if (isMatched) {
+    //         setIsEditing(true);
+    //     }
+    // }, [isMatched]);
+
     return (
         <div className="button-container">
             <div className="button-wrapper">
@@ -64,7 +71,7 @@ const ButtonContainer = ({ seatNumber, initialLabel, placeholder, isHighlighted,
                     }}
                 />
                 {/* Display the button label */}
-                <div className={`label ${isEditing ? 'visible' : ''}`}>{buttonLabel}</div>
+                <div className={`label ${isEditing || isMatched ? 'visible' : ''}`}>{buttonLabel}</div>
             </div>
             {/* Render an input field if in editing mode */}
             {isEditing && (
