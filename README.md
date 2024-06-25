@@ -6,7 +6,7 @@ Genuine Parts Company (Fortune 200 Company) Summer 2024 Tech Internship Project 
 - Connect the front-end to a MongoDB database, enabling real-time updates and storage of seat information
 
 
-## Update:
+## Updates:
 
 - 06.24 - searching feature
 - 06.25 - fetch all data at once
