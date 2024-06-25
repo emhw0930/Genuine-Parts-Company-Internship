@@ -1,4 +1,3 @@
-// src/components/ButtonContainer.js
 import React, { useState, useEffect, useContext } from 'react';
 import Button from './Button';
 import { SeatDataContext } from '../context/SeatDataContext.jsx';
@@ -9,6 +8,7 @@ const ButtonContainer = ({ seatNumber, initialLabel, placeholder, isHighlighted,
     const { seats, loading } = useContext(SeatDataContext);
     const [buttonLabel, setButtonLabel] = useState('');
     const [isEditing, setIsEditing] = useState(false);
+    const [isMatchedDelayed, setIsMatchedDelayed] = useState(false);
 
     // Fetch seat data from context
     useEffect(() => {
@@ -50,12 +50,18 @@ const ButtonContainer = ({ seatNumber, initialLabel, placeholder, isHighlighted,
     // Determine if the current button label matches the search term
     const isMatched = searchTerm && buttonLabel.toLowerCase().includes(searchTerm.toLowerCase());
 
-    // // Set isEditing to true if isMatched is true
-    // useEffect(() => {
-    //     if (isMatched) {
-    //         setIsEditing(true);
-    //     }
-    // }, [isMatched]);
+    // Set isMatchedDelayed to true if isMatched is true after 1 seconds
+    useEffect(() => {
+        let timer;
+        if (isMatched) {
+            timer = setTimeout(() => {
+                setIsMatchedDelayed(true);
+            }, 800);
+        } else {
+            setIsMatchedDelayed(false);
+        }
+        return () => clearTimeout(timer);
+    }, [isMatched]);
 
     return (
         <div className="button-container">
@@ -67,11 +73,11 @@ const ButtonContainer = ({ seatNumber, initialLabel, placeholder, isHighlighted,
                     style={{
                         ...buttonStyle,
                         ...(isHighlighted ? { background: '#646cff' } : {}),
-                        ...(isMatched ? { background: 'rgb(57, 57, 179)' } : {})
+                        ...(isMatchedDelayed ? { background: 'rgb(57, 57, 179)' } : {})
                     }}
                 />
                 {/* Display the button label */}
-                <div className={`label ${isEditing || isMatched ? 'visible' : ''}`}>{buttonLabel}</div>
+                <div className={`label ${isEditing || isMatchedDelayed ? 'visible' : ''}`}>{buttonLabel}</div>
             </div>
             {/* Render an input field if in editing mode */}
             {isEditing && (

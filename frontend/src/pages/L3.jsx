@@ -1,10 +1,8 @@
 import ButtonContainer from '../components/ButtonContainer'
-import { SeatDataProvider } from '../context/SeatDataContext.jsx';
 import './L3.css'
 
 export default function L3({ searchTerm }) {
   return (
-    <SeatDataProvider>
       <div className="frame-1">
         {/* <input type="text" /> */}
         <div className="container-7">
@@ -4406,7 +4404,6 @@ export default function L3({ searchTerm }) {
           </div>
         </div>
       </div>
-    </SeatDataProvider>
   )
 }
 

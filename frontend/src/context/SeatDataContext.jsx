@@ -1,4 +1,6 @@
 // src/context/SeatDataContext.jsx
+// Fetching data from MongoDB 
+// Make a seats object
 import React, { createContext, useState, useEffect } from 'react';
 import { getAllSeats } from '../api';
 
@@ -21,7 +23,7 @@ export const SeatDataProvider = ({ children }) => {
 
     fetchAllSeats();
   }, []);
-  
+
   return (
     <SeatDataContext.Provider value={{ seats, loading }}>
       {children}

@@ -1,15 +1,8 @@
+// src/components/L3_Main.jsx
 import React, { useState } from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import '../index.css';
-import F12Main from '../F12Main';
 import L3 from './L3';
 import Header from '../components/Header';
-
-// const router = createBrowserRouter([
-//   { path: '/', element: <F12Main /> },
-//   { path: '/L3', element: <L3 /> },
-//   // Add more routes here as needed
-// ]);
 
 export default function L3_Main() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -27,9 +20,6 @@ export default function L3_Main() {
     <div className='all'>
       <Header searchTerm={searchTerm} isDropdownOpen={isDropdownOpen} toggleDropdown={toggleDropdown} handleSearchChange={handleSearchChange}/>
       <L3 searchTerm={searchTerm} />
-      <div className='frame-container' style={{ marginTop: '-50px' }}>
-        {/* <RouterProvider router={router} /> */}
-      </div>
     </div>
   );
 }

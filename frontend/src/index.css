@@ -16,6 +16,10 @@ body {
   background-position-y: 200px;
 }
 
+p {
+  font-size: 14px;
+}
+
 #root {
   height: 100vh; /* 100% of viewport height */
   width: 100vw; /* 100% of viewport width */
@@ -31,6 +35,7 @@ header {
   align-items: center; /* Center vertically */
   padding: 0 20px; /* Add some padding for better spacing */
   position: relative;
+  z-index: 100;
 }
 
 h1 {
@@ -57,8 +62,9 @@ h1 {
   color: white;
   background-color: rgb(57, 57, 179);
   height: 40px;
-  width: 500px; /* Fixed width for input box */
+  width: 540px; /* Fixed width for input box */
   font-size: 16px;
+  margin-right: 40px;
   border: 2px solid rgb(57, 57, 179);
   border-radius: 5px;
   border-top-right-radius: 0px;
@@ -137,6 +143,7 @@ h1 {
   width: 100px;
   height: 200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
 .dropdown-menu button {
@@ -177,4 +184,38 @@ h1 {
   max-height: 0;
   opacity: 0;
   transition: max-height 300ms ease-out, opacity 300ms ease-out;
+}
+
+
+/* src/index.css */
+
+.matched-seats-dropdown {
+  position: absolute;
+  width: 540px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 1004;
+  max-height: 200px;
+  overflow-y: auto; /*so you can scroll down*/
+  border-radius: 5px;
+}
+
+.matched-seat-button {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 8px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  z-index: 1004;
+}
+
+.matched-seat-button:hover {
+  background-color: #e3e3e3;
+  z-index: 1004;
 }
