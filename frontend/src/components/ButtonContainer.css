@@ -1,0 +1,63 @@
+/* src/App.css */
+  button {
+    width: 97.4px;
+    height: 231.3px;
+    border: 1px solid transparent; /* Set initial border color */
+    transition: border-color 0.3s ease-in-out; /* Add transition for smooth effect */
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start of the container */
+  }
+  
+  input {
+    /* margin-top: 20px; */
+    padding: 8px;
+    font-size: 14px;
+    width: 80px;
+    position: absolute;
+    /* right: 100%; */
+    z-index: 1;
+  }
+  
+  .button-wrapper {
+    position: relative; /* Ensure positioning context for the label */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+  }
+  
+  .label {
+    border-radius: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: rgb(230, 230, 230);
+    font-size: 14px;
+    color: #242424;
+    visibility: hidden; /* Hide the label by default */
+    position: absolute;
+    bottom: 100%; /* Position it just below the button */
+    transition: visibility 0s, opacity 0.2s ease-in-out;
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .button-wrapper:hover .button {
+    /* Define the styles for the button when hovered */
+    /* For example, you can change the background color */
+    background: white; /* Change this color as per your design */
+}
+
+  .button-wrapper:hover .label {
+      visibility: visible; /* Show the label on hover */
+      opacity: 1;
+  }
+
+  .label.visible {
+    visibility: visible; /* Show the label when in edit mode */
+    opacity: 1;
+ }
+
+
