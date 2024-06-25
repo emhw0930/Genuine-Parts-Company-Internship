@@ -9,5 +9,5 @@ Genuine Parts Company (Fortune 200 Company) Summer 2024 Tech Internship Project 
 ## Updates:
 
 - 06.24 - searching feature
-- 06.25 - fetch all data at once
+- 06.25 - optimizing fetching data
 
