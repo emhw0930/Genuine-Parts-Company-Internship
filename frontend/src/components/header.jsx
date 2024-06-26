@@ -20,7 +20,7 @@ export default function Header({ searchTerm, isDropdownOpen, toggleDropdown, han
   return (
     <header>
       <img src="../src/pictures/logo.png" alt="Logo" className="logo" />
-      <h1>Level 3</h1>
+      <h1>Indoor Map</h1>
       <div className="input-container">
         <input
           type="text"
@@ -42,12 +42,16 @@ export default function Header({ searchTerm, isDropdownOpen, toggleDropdown, han
                 window.location.href = `/seat/${seat.seatId}`;
               }}
             >
-              <p>{seat.name}</p>
+              <div class="search-button-container">
+                <div class="image-container"></div>
+                <p>{seat.name}</p>
+              </div>
             </button>
             ))}
           </div>
         )}
       </div>
+      {/*
       <div>
         <button onClick={toggleDropdown} className="dropdown-toggle">
           Level
@@ -62,10 +66,10 @@ export default function Header({ searchTerm, isDropdownOpen, toggleDropdown, han
             <button onClick={() => window.location.href = '/'}>Home</button>
             <button onClick={() => window.location.href = '/Frame1'}>Level 1</button>
             <button onClick={() => window.location.href = '/Frame1'}>Level 2</button>
-            {/* Add more buttons for other pages here */}
           </div>
         </CSSTransition>
       </div>
+      */}
     </header>
   );
 }

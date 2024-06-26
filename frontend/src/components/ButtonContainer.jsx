@@ -56,7 +56,7 @@ const ButtonContainer = ({ seatNumber, initialLabel, placeholder, isHighlighted,
         if (isMatched) {
             timer = setTimeout(() => {
                 setIsMatchedDelayed(true);
-            }, 800);
+            }, 300);
         } else {
             setIsMatchedDelayed(false);
         }

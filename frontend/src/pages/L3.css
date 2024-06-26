@@ -167,7 +167,7 @@
   box-sizing: border-box;
 }
 .frame-1 .container-35 {
-  margin: 0 19.2px 61.5px 0;
+  margin: 0 19.2px 0px 0;
   display: flex;
   flex-direction: column;
   width: 92.9px;
@@ -417,7 +417,7 @@
   height: 19.5px;
 }
 .frame-1 .container-97 {
-  margin: 21.5px 0px 266px 0;
+  margin: 21.5px 0px 0px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -451,7 +451,7 @@
   height: 19.5px;
 }
 .frame-1 .container-103 {
-  margin: 21.5px 0 266px 0;
+  margin: 21.5px 0 0px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -485,7 +485,7 @@
   height: 19.5px;
 }
 .frame-1 .container-47 {
-  margin: 21.5px 8.9px 266px 0;
+  margin: 21.5px 8.9px 0px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -519,7 +519,7 @@
   height: 19.5px;
 }
 .frame-1 .container-43 {
-  margin: 20.5px 0 266px 0;
+  margin: 20.5px 0 0px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -553,7 +553,7 @@
   height: 19.5px;
 }
 .frame-1 .container-8 {
-  margin: 20.5px 0px 266px 0;
+  margin: 20.5px 0px 0px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -587,7 +587,7 @@
   height: 19.5px;
 }
 .frame-1 .container-52 {
-  margin: 20.5px 0px 266px 0;
+  margin: 20.5px 0px 0px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -734,9 +734,10 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  width: 1411.3px; 
+  width: fit-content; 
   height: fit-content;
   box-sizing: border-box;
+  border: 1px solid grey; /* Add border */
 }
 .frame-1 .container-new4 {
   position: absolute;
@@ -790,7 +791,7 @@
 }
 .frame-1 .container-7 {
   position: relative;
-  margin: 0 200px 30.4px 0px;
+  margin: 0 200px 0px 0px;
   display: flex;
   width: 1411.3px;
   box-sizing: border-box;
@@ -828,15 +829,29 @@
 }
 .frame-1 .container-119 {
   background: transparent;
-  position: relative;
-  margin-bottom: 30.3px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 8px 0;
-  height: 30px;
-  width: 1590px;
+  height: 120px;
+  width: 1400px;
+  margin-left: 97px;
   box-sizing: border-box;
+  border: 1px solid grey;
+  /* background-image: url('../pictures/stair.jpg'); 
+  background-size: 49%;
+  background-repeat: no-repeat;
+  background-position-x: 42%;
+  background-position-y: bottom; */
+}
+.frame-1 .rectangle-new7 {
+  height: 120px;
+  border: 1px solid grey;
+  width: 207px;
+}
+.frame-1 .rectangle-new8 {
+  height: 120px;
+  border: 1px solid grey;
+  width: 207px;
+  margin-left: auto;
 }
 .frame-1 .rectangle-285 {
   border: 1px solid grey;
@@ -1131,7 +1146,7 @@
   height: 67.4px;
 }
 .frame-1 .container-5 {
-  margin: 0 20.2px 24.9px 20.2px;
+  margin: 0 20.2px 30px 20.2px;
   display: flex;
   flex-direction: row;
   align-self: flex-end;
@@ -1182,7 +1197,7 @@
   padding-top: 3.5px;
 }
 .frame-1 .container-117 {
-  margin: 3.9px 0 0px 0;
+  margin: 0px 0 0px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2666,14 +2681,58 @@
   flex-direction: row;
   width: 1390.2px;
   box-sizing: border-box;
+  border: 1px solid grey;
   /* height:min-content; */
 }
 .frame-1 {
-  transform: scale(0.7);
-  display: flex;
+  display: table;
   flex-direction: column;
   align-items: center;
   justify-content: center; /* Center items vertically */
-  height: 90%; /* Ensure the frame takes full height of its parent */
+  height: 100%; /* Ensure the frame takes full height of its parent */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  /* border: 2px solid #ccc; /* Add border */
 }
+
+.frame-1-main {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center items vertically */
+  height: 80vh;
+}
+
+/* Default scale */
+.frame-1 {
+  transform: scale(0.7);
+}
+
+/* Scale adjustments for different screen sizes */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .frame-1 {
+    transform: scale(0.4);
+  }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .frame-1 {
+    transform: scale(0.4);
+  }
+}
+
+/* Large devices (desktops, 769px and up) */
+@media only screen and (min-width: 769px) and (max-width: 1500px) {
+  .frame-1 {
+    transform: scale(0.6);
+  }
+}
+
+/* Extra large devices (large desktops, 1201px and up) */
+@media only screen and (min-width: 1500px) {
+  .frame-1 {
+    transform: scale(0.7);
+  }
+}
+

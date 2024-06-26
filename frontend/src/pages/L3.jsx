@@ -3,6 +3,7 @@ import './L3.css'
 
 export default function L3({ searchTerm }) {
   return (
+    <div className="frame-1-main">
       <div className="frame-1">
         {/* <input type="text" /> */}
         <div className="container-7">
@@ -32,7 +33,7 @@ export default function L3({ searchTerm }) {
                 buttonStyle={{ 
                   border: '1px solid grey', 
                   width: '97.4px', 
-                  height: '152.8px', 
+                  height: '166.8px', 
                   color: 'white', 
                   background:'#D9D9D9'
               }}/>
@@ -1666,7 +1667,7 @@ export default function L3({ searchTerm }) {
                   color: 'white',
                   background: '#D9D9D9',
                   width: '97.5px',
-                  height: '378.7px'
+                  height: '397.7px'
               }}/>
           </div>
           <div className='container-new4'>
@@ -1694,6 +1695,10 @@ export default function L3({ searchTerm }) {
         </div>
 
         <div className="container-119">
+          <div className='rectangle-new7'>
+          </div>
+          <div className='rectangle-new8'>
+          </div>
           {/* <span className="hallway-and-stairs">
           Hallway and Stairs
           </span>
@@ -4404,6 +4409,7 @@ export default function L3({ searchTerm }) {
           </div>
         </div>
       </div>
+    </div>
   )
 }
 
