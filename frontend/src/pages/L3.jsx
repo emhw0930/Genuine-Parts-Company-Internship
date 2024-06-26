@@ -1,7 +1,7 @@
 import ButtonContainer from '../components/ButtonContainer'
 import './L3.css'
 
-export default function L3({ searchTerm }) {
+export default function L3({ searchTerm , seatID}) {
   return (
     <div className="frame-1-main">
       <div className="frame-1">
@@ -14,7 +14,7 @@ export default function L3({ searchTerm }) {
                 seatNumber="A1" 
                 initialLabel="SeatA1" 
                 placeholder="Enter new label" 
-                isHighlighted={false} 
+                isHighlighted={seatID === "SeatA1"} 
                 searchTerm={searchTerm}
                 buttonStyle={{ 
                   border: '1px solid grey', 
@@ -28,7 +28,7 @@ export default function L3({ searchTerm }) {
                 seatNumber="A2" 
                 initialLabel="SeatA2" 
                 placeholder="Enter new label" 
-                isHighlighted={false} 
+                isHighlighted={seatID === "SeatA2"} 
                 searchTerm={searchTerm}
                 buttonStyle={{ 
                   border: '1px solid grey', 
@@ -46,7 +46,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A3" 
                     initialLabel="SeatA3" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA3"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey', 
@@ -60,7 +60,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A4" 
                     initialLabel="SeatA4" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA4"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey', 
@@ -74,7 +74,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A5" 
                     initialLabel="SeatA5" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA5"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey', 
@@ -89,7 +89,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A6" 
                     initialLabel="SeatA6" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA6"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey', 
@@ -105,7 +105,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA14" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA14" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -120,7 +120,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA15" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA15" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -135,7 +135,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA16" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA16" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -149,7 +149,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA17" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA17" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -163,7 +163,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA18" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA18" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -179,7 +179,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA19" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA19" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -194,7 +194,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA20" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA20" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -209,7 +209,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA21" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA21" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -223,7 +223,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA22" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA22" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -237,7 +237,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA23" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA23" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -253,7 +253,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A38" 
                     initialLabel="SeatA38" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA38" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -267,7 +267,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A39" 
                     initialLabel="SeatA39" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA39" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       marginTop: '27.3px',
@@ -283,7 +283,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A40" 
                     initialLabel="SeatA40" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA40" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       margin: '0 14.3px',
@@ -301,7 +301,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="A7" 
                       initialLabel="SeatA7" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA7"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey', 
@@ -316,7 +316,7 @@ export default function L3({ searchTerm }) {
                   seatNumber="A8" 
                   initialLabel="SeatA8" 
                   placeholder="Enter new label" 
-                  isHighlighted={false} 
+                  isHighlighted={seatID === "SeatA8"} 
                   searchTerm={searchTerm}
                   buttonStyle={{ 
                     border: '1px solid grey', 
@@ -332,7 +332,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA24" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA24" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -346,7 +346,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA25" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA25" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -360,7 +360,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA26" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA26" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -376,7 +376,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA27" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA27" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -390,7 +390,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA28" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA28" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -404,7 +404,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA29" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA29" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -420,7 +420,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA41" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA41" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -434,7 +434,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA42" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA42" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -450,7 +450,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA43" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA43" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -464,7 +464,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA44" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA44" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -480,7 +480,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA45" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA45" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -494,7 +494,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA46" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA46" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -510,7 +510,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA47" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA47" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -524,7 +524,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA48" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA48" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -540,7 +540,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA49" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA49" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -554,7 +554,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA50" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA50" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -572,7 +572,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A9" 
                     initialLabel="SeatA9" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA9"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey', 
@@ -588,7 +588,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A10" 
                     initialLabel="SeatA10" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA10" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey', 
@@ -606,7 +606,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA30" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA30" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -620,7 +620,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA31" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA31" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -634,7 +634,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA32" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA32" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -650,7 +650,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA33" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA33" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -664,7 +664,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA34" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA34" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -678,7 +678,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA35" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA35" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -694,7 +694,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A51" 
                     initialLabel="SeatA51" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA51" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -708,7 +708,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A53" 
                     initialLabel="SeatA53" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA53" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -724,7 +724,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A52" 
                     initialLabel="SeatA52" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA52" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -741,7 +741,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A11" 
                     initialLabel="SeatA11" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA11" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey', 
@@ -757,7 +757,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A12" 
                     initialLabel="SeatA12" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA12" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey', 
@@ -774,7 +774,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA36" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA36" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -790,7 +790,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA37" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA37" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -809,7 +809,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="A54" 
                       initialLabel="SeatA54" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA54" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         marginLeft: '0px',
@@ -828,7 +828,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="A56" 
                       initialLabel="SeatA56" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA56" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         marginLeft: '0px',
@@ -844,7 +844,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="A55" 
                       initialLabel="SeatA55" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA55" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -860,7 +860,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="A57" 
                       initialLabel="SeatA57" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA57" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -877,7 +877,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="A58" 
                       initialLabel="SeatA58" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA58" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -893,7 +893,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="A59" 
                       initialLabel="SeatA59" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA59" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -908,7 +908,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="A60" 
                       initialLabel="SeatA60" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA60" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -926,7 +926,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA65" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA65" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -941,7 +941,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA66" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA66" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         marginBottom: '19px',
@@ -957,7 +957,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA81" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA81" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -972,7 +972,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA82" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA82" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         marginBottom: '23px',
@@ -988,7 +988,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="A62" 
                       initialLabel="SeatA62" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA62" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1004,7 +1004,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="A63" 
                       initialLabel="SeatA63" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA63" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1020,7 +1020,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="A64" 
                       initialLabel="SeatA64" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA64" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1036,7 +1036,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="A61" 
                       initialLabel="SeatA61" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA61" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1054,7 +1054,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA67" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA67" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1069,7 +1069,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA68" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA68" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1085,7 +1085,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA83" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA83" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1100,7 +1100,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA84" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA84" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         marginBottom: '19px',
@@ -1118,7 +1118,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA69" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA69" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1133,7 +1133,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA70" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA70" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         marginBottom: '19px',
@@ -1149,7 +1149,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA85" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA85" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1164,7 +1164,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA86" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA86" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         marginBottom: '19px',
@@ -1182,7 +1182,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA71" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA71" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1197,7 +1197,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA72" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA72" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         marginBottom: '19px',
@@ -1213,7 +1213,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA87" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA87" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1228,7 +1228,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA88" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA88" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         marginBottom: '19px',
@@ -1246,7 +1246,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA73" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA73" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1261,7 +1261,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA74" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA74" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         marginBottom: '19px',
@@ -1277,7 +1277,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA89" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA89" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1292,7 +1292,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA90" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA90" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         marginBottom: '19px',
@@ -1310,7 +1310,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA75" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA75" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1325,7 +1325,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA76" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA76" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         marginBottom: '19px',
@@ -1341,7 +1341,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA91" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA91" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1356,7 +1356,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA95" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA95" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1373,7 +1373,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA77" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA77" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1388,7 +1388,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA78" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA78" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         marginBottom: '19px',
@@ -1404,7 +1404,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA92" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA92" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1419,7 +1419,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA93" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA93" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1438,7 +1438,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA79" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA79" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1453,7 +1453,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA80" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA80" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         marginBottom: '19px',
@@ -1469,7 +1469,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA94" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA94" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1484,7 +1484,7 @@ export default function L3({ searchTerm }) {
                         seatNumber="" 
                         initialLabel="SeatA96" 
                         placeholder="Enter new label" 
-                        isHighlighted={false} 
+                        isHighlighted={seatID === "SeatA96" } 
                         searchTerm={searchTerm}
                         buttonStyle={{ 
                           border: '1px solid grey',
@@ -1501,7 +1501,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="A102" 
                       initialLabel="SeatA102" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA102"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1516,7 +1516,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="A101" 
                       initialLabel="SeatA101" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA101"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1531,7 +1531,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="A100" 
                       initialLabel="SeatA100" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA100"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1546,7 +1546,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="A99" 
                       initialLabel="SeatA99" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA99" } 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1562,7 +1562,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="A103" 
                       initialLabel="SeatA103" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA103"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1577,7 +1577,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="A104" 
                       initialLabel="SeatA104" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA104"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1592,7 +1592,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="A105" 
                       initialLabel="SeatA105" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA105"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -1609,7 +1609,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A97" 
                     initialLabel="SeatA97" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA97" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -1624,7 +1624,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A98" 
                     initialLabel="SeatA98" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA98" } 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -1641,7 +1641,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A108" 
                     initialLabel="SeatA108" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA108"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -1660,7 +1660,7 @@ export default function L3({ searchTerm }) {
                 seatNumber="A106" 
                 initialLabel="SeatA106" 
                 placeholder="Enter new label" 
-                isHighlighted={false} 
+                isHighlighted={seatID === "SeatA106"} 
                 searchTerm={searchTerm}
                 buttonStyle={{ 
                   border: '1px solid grey',
@@ -1676,7 +1676,7 @@ export default function L3({ searchTerm }) {
                 seatNumber="A13" 
                 initialLabel="SeatA13" 
                 placeholder="Enter new label" 
-                isHighlighted={false} 
+                isHighlighted={seatID === "SeatA13" } 
                 searchTerm={searchTerm}
                 buttonStyle={{ 
                   border: '1px solid grey', 
@@ -1719,7 +1719,7 @@ export default function L3({ searchTerm }) {
                 seatNumber="A107" 
                 initialLabel="SeatA15" 
                 placeholder="Enter new label" 
-                isHighlighted={false} 
+                isHighlighted={seatID === "SeatA15" } 
                 searchTerm={searchTerm}
                 buttonStyle={{ border: '1px solid grey',
                   color: 'white',
@@ -1732,7 +1732,7 @@ export default function L3({ searchTerm }) {
                 seatNumber="A108" 
                 initialLabel="SeatA16" 
                 placeholder="Enter new label" 
-                isHighlighted={false} 
+                isHighlighted={seatID === "SeatA16" } 
                 searchTerm={searchTerm}
                 buttonStyle={{ border: '1px solid grey',
                   color: 'white',
@@ -1749,7 +1749,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA109" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA109"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -1762,7 +1762,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA110" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA110"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -1777,7 +1777,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA115" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA115"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -1790,7 +1790,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA116" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA116"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -1805,7 +1805,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA117" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA117"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -1818,7 +1818,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA118" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA118"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -1835,7 +1835,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA111" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA111"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -1848,7 +1848,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA112" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA112"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -1863,7 +1863,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA113" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA113"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -1876,7 +1876,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA114" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA114"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -1891,7 +1891,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA119" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA119"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -1904,7 +1904,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA120" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA120"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -1921,7 +1921,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA121" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA121"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -1934,7 +1934,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA122" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA122"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -1949,7 +1949,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA123" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA123"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -1962,7 +1962,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA124" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA124"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -1977,7 +1977,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA125" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA125"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -1990,7 +1990,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA126" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA126"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -2007,7 +2007,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA127" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA127"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -2020,7 +2020,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA128" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA128"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -2035,7 +2035,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA129" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA129"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -2048,7 +2048,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA130" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA130"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -2063,7 +2063,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA131" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA131"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -2076,7 +2076,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA132" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA132"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -2092,7 +2092,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A133" 
                     initialLabel="SeatA133" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA133"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -2105,7 +2105,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A134" 
                     initialLabel="SeatA134" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA134"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -2120,7 +2120,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A135" 
                     initialLabel="SeatA135" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA135"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -2133,7 +2133,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A136" 
                     initialLabel="SeatA136" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA136"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -2146,7 +2146,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A137" 
                     initialLabel="SeatA137" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA137"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -2159,7 +2159,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A138" 
                     initialLabel="SeatA138" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA138"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -2172,7 +2172,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A139" 
                     initialLabel="SeatA139" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA139"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -2185,7 +2185,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A140" 
                     initialLabel="SeatA140" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA140"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -2202,7 +2202,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA141" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA141"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -2215,7 +2215,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA142" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA142"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       marginRight: '13.3px',
@@ -2229,7 +2229,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA143" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA143"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2244,7 +2244,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA144" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA144"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2259,7 +2259,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA145" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA145"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2275,7 +2275,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA146" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA146"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2290,7 +2290,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA147" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA147"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2305,7 +2305,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA148" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA148"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2322,7 +2322,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA149" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA149"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2336,7 +2336,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA150" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA150"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2351,7 +2351,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA151" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA151"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2366,7 +2366,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA152" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA152"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2381,7 +2381,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA153" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA153"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2396,7 +2396,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA154" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA154"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2410,7 +2410,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA155" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA155"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2425,7 +2425,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA156" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA156"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2442,7 +2442,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA157" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA157"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2456,7 +2456,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA158" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA158"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2471,7 +2471,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA159" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA159"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2486,7 +2486,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA160" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA160"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2501,7 +2501,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA161" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA161"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2516,7 +2516,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA162" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA162"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2530,7 +2530,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA163" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA163"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2545,7 +2545,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA164" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA164"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2562,7 +2562,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA165" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA165"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2576,7 +2576,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA166" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA166"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2591,7 +2591,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA167" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA167"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2606,7 +2606,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA168" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA168"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2621,7 +2621,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA169" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA169"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2636,7 +2636,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA170" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA170"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2650,7 +2650,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA171" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA171"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2665,7 +2665,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel="SeatA172" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA172"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -2683,7 +2683,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA173" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA173"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -2697,7 +2697,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA174" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA174"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -2711,7 +2711,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA175" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA175"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -2727,7 +2727,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA176" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA176"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -2741,7 +2741,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA177" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA177"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -2755,7 +2755,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA178" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA178"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -2771,7 +2771,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA179" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA179"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -2785,7 +2785,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA180" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA180"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -2799,7 +2799,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA181" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA181"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -2815,7 +2815,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA182" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA182"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -2829,7 +2829,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA183" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA183"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -2843,7 +2843,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA184" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA184"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -2859,7 +2859,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA185" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA185"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -2873,7 +2873,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA186" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA186"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -2887,7 +2887,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA187" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA187"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -2904,7 +2904,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A188" 
                     initialLabel="SeatA188" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA188"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -2917,7 +2917,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A189" 
                     initialLabel="SeatA189" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA189"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -2930,7 +2930,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A190" 
                     initialLabel="SeatA190" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA190"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -2943,7 +2943,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A191" 
                     initialLabel="SeatA191" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA191"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -2956,7 +2956,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A192" 
                     initialLabel="SeatA192" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA192"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -2969,7 +2969,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A193" 
                     initialLabel="SeatA193" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA193"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ border: '1px solid grey',
                       color: 'white',
@@ -2986,7 +2986,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A194" 
                     initialLabel="SeatA194" 
                     placeholder="Enter new label" 
-                    isHighlighted={false} 
+                    isHighlighted={seatID === "SeatA194"} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3002,7 +3002,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA195" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA195"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -3016,7 +3016,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel="SeatA196" 
                       placeholder="Enter new label" 
-                      isHighlighted={false} 
+                      isHighlighted={seatID === "SeatA196"} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -3030,7 +3030,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel='SeatA197'
                       placeholder="Enter new label"
-                      isHighlighted={false} 
+                      isHighlighted={seatID === 'SeatA197'} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -3044,7 +3044,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="" 
                       initialLabel='SeatA198'
                       placeholder="Enter new label"
-                      isHighlighted={false} 
+                      isHighlighted={seatID === 'SeatA198'} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -3061,7 +3061,7 @@ export default function L3({ searchTerm }) {
                       seatNumber="A199" 
                       initialLabel='SeatA199'
                       placeholder="Enter new label"
-                      isHighlighted={false} 
+                      isHighlighted={seatID === 'SeatA199'} 
                       searchTerm={searchTerm}
                       buttonStyle={{ 
                         border: '1px solid grey',
@@ -3076,7 +3076,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A200" 
                     initialLabel='SeatA200'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA200'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3091,7 +3091,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A201" 
                     initialLabel='SeatA201'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA201'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3111,7 +3111,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA202'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA202'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3125,7 +3125,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA203'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA203'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3140,7 +3140,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA204'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA204'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3154,7 +3154,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA205'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA205'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3171,7 +3171,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA206'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA206'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3186,7 +3186,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA207'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA207'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3200,7 +3200,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA208'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA208'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3215,7 +3215,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA209'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA209'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3229,7 +3229,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA210'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA210'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3247,7 +3247,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA211'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA211'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3261,7 +3261,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA212'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA212'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3276,7 +3276,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA213'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA213'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3290,7 +3290,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA214'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA214'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3307,7 +3307,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA215'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA215'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3322,7 +3322,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA216'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA216'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3336,7 +3336,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA217'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA217'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3351,7 +3351,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA218'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA218'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3365,7 +3365,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA219'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA219'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3383,7 +3383,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA220'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA220'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3397,7 +3397,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA221'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA221'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3412,7 +3412,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA222'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA222'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3426,7 +3426,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA223'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA223'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3443,7 +3443,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA224'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA224'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3458,7 +3458,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA225'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA225'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3472,7 +3472,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA226'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA226'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3487,7 +3487,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA227'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA227'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3501,7 +3501,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA228'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA228'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3519,7 +3519,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA229'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA229'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3533,7 +3533,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA230'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA230'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3548,7 +3548,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA231'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA231'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3562,7 +3562,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA232'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA232'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3579,7 +3579,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA233'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA233'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3594,7 +3594,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA234'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA234'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3608,7 +3608,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA235'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA235'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3623,7 +3623,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA236'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA236'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3637,7 +3637,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA237'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA237'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3656,7 +3656,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA238'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA238'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3671,7 +3671,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA239'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA239'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3685,7 +3685,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA240'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA240'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3701,7 +3701,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA241'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA241'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3715,7 +3715,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA242'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA242'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3731,7 +3731,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA243'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA243'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3745,7 +3745,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA244'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA244'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3763,7 +3763,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA245'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA245'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3778,7 +3778,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA246'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA246'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3792,7 +3792,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA247'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA247'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3808,7 +3808,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA248'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA248'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3822,7 +3822,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA249'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA249'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3838,7 +3838,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA250'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA250'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3852,7 +3852,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA251'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA251'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3870,7 +3870,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA252'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA252'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3885,7 +3885,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA253'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA253'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3899,7 +3899,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA254'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA254'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3915,7 +3915,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA255'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA255'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3929,7 +3929,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA256'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA256'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3945,7 +3945,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA257'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA257'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3959,7 +3959,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA258'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA258'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3976,7 +3976,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A259" 
                     initialLabel='SeatA259'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA259'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -3990,7 +3990,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A260" 
                     initialLabel='SeatA260'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA260'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4004,7 +4004,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A261" 
                     initialLabel='SeatA261'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA261'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4018,7 +4018,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A262" 
                     initialLabel='SeatA262'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA262'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4032,7 +4032,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A263" 
                     initialLabel='SeatA263'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA263'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4046,7 +4046,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A264" 
                     initialLabel='SeatA264'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA264'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4060,7 +4060,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A265" 
                     initialLabel='SeatA265'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA265'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4074,7 +4074,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A266" 
                     initialLabel='SeatA266'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA266'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4088,7 +4088,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A267" 
                     initialLabel='SeatA267'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA267'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4106,7 +4106,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA268'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA268'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4120,7 +4120,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA269'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA269'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4135,7 +4135,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA270'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA270'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4153,7 +4153,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA271'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA271'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4167,7 +4167,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA272'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA272'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4182,7 +4182,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA273'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA273'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4199,7 +4199,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA274'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA274'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4213,7 +4213,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA275'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA275'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4228,7 +4228,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA276'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA276'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4245,7 +4245,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA277'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA277'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4259,7 +4259,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA278'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA278'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4274,7 +4274,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA279'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA279'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4292,7 +4292,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA280'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA280'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4306,7 +4306,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA281'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA281'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4320,7 +4320,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA282'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA282'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4335,7 +4335,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="" 
                     initialLabel='SeatA287'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA287'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4352,7 +4352,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A283" 
                     initialLabel='SeatA283'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA283'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4366,7 +4366,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A284" 
                     initialLabel='SeatA284'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA284'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4383,7 +4383,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A285" 
                     initialLabel='SeatA285'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA285'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',
@@ -4397,7 +4397,7 @@ export default function L3({ searchTerm }) {
                     seatNumber="A286" 
                     initialLabel='SeatA286'
                     placeholder="Enter new label"
-                    isHighlighted={false} 
+                    isHighlighted={seatID === 'SeatA286'} 
                     searchTerm={searchTerm}
                     buttonStyle={{ 
                       border: '1px solid grey',

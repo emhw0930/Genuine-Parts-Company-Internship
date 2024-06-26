@@ -4,9 +4,10 @@ import '../index.css';
 import { CSSTransition } from 'react-transition-group';
 import { SeatDataContext } from '../context/SeatDataContext';
 
-export default function Header({ searchTerm, isDropdownOpen, toggleDropdown, handleSearchChange }) {
+export default function Header({ searchTerm, handleSearchChange }) {
   const { seats, loading } = useContext(SeatDataContext);
   const [matchedSeats, setMatchedSeats] = useState([]);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   useEffect(() => {
     if (!loading && searchTerm) {
@@ -16,6 +17,14 @@ export default function Header({ searchTerm, isDropdownOpen, toggleDropdown, han
       setMatchedSeats([]);
     }
   }, [searchTerm, loading, seats]);
+
+  const handleMouseEnter = () => {
+    setIsDropdownOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDropdownOpen(false);
+  };
 
   return (
     <header>
@@ -39,11 +48,11 @@ export default function Header({ searchTerm, isDropdownOpen, toggleDropdown, han
               key={seat.seatId}  // Unique key prop
               className="matched-seat-button"
               onClick={() => {
-                window.location.href = `/seat/${seat.seatId}`;
+                window.location.href = `/seats/${seat.seatId}`;
               }}
             >
-              <div class="search-button-container">
-                <div class="image-container"></div>
+              <div className="search-button-container">
+                <div className="image-container"></div>
                 <p>{seat.name}</p>
               </div>
             </button>
@@ -51,10 +60,9 @@ export default function Header({ searchTerm, isDropdownOpen, toggleDropdown, han
           </div>
         )}
       </div>
-      {/*
-      <div>
-        <button onClick={toggleDropdown} className="dropdown-toggle">
-          Level
+      <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="dropdown-container">
+        <button className="dropdown-toggle">
+          Level 3
         </button>
         <CSSTransition
           in={isDropdownOpen}
@@ -64,12 +72,11 @@ export default function Header({ searchTerm, isDropdownOpen, toggleDropdown, han
         >
           <div className="dropdown-menu">
             <button onClick={() => window.location.href = '/'}>Home</button>
-            <button onClick={() => window.location.href = '/Frame1'}>Level 1</button>
-            <button onClick={() => window.location.href = '/Frame1'}>Level 2</button>
+            <button onClick={() => window.location.href = '/L1'}>Level 1</button>
+            <button onClick={() => window.location.href = '/L2'}>Level 2</button>
           </div>
         </CSSTransition>
       </div>
-      */}
     </header>
   );
 }

@@ -119,8 +119,7 @@ h1 {
   color: white;
   border: none;
   cursor: pointer;
-  margin-top: 10px;
-  border-radius: 5px;
+  border-radius: 3px;
   transition: background-color 0.3s;
   height: 40px;
 }
@@ -133,7 +132,7 @@ h1 {
   display: flex;
   flex-direction: column;
   background-color: rgb(250, 252, 254);
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 10px;
   position: absolute;
   width: 100px;
@@ -150,7 +149,7 @@ h1 {
   background-color: rgb(84, 84, 184);
   color: white;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 3px;
   transition: background-color 0.3s;
 }
 
@@ -163,12 +162,12 @@ h1 {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: max-height 300ms ease-out, opacity 300ms ease-out;
 }
 
 .dropdown-enter-active {
   max-height: 200px;
   opacity: 1;
+  transition: max-height 300ms ease-out, opacity 800ms ease-out;
 }
 
 .dropdown-exit {
@@ -179,9 +178,8 @@ h1 {
 .dropdown-exit-active {
   max-height: 0;
   opacity: 0;
-  transition: max-height 300ms ease-out, opacity 300ms ease-out;
+  transition: max-height 800ms ease-out, opacity 300ms ease-out;
 }
-
 
 /* Searching Drop Down Menu */
 
@@ -193,6 +191,7 @@ h1 {
   right: 0;
   background: white;
   border: 1px solid #ccc;
+  /* border: 1px solid #ff8977; */
   z-index: 1004;
   max-height: 200px;
   overflow-y: auto; /*so you can scroll down*/
@@ -244,4 +243,41 @@ p {
   display: flex;
   align-items: center;
   margin-left: 10px;
+}
+
+/* seat details */
+.name {
+  margin: 0;
+}
+.personal-information-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.personal-information {
+  background-image: url(./pictures/person-icon.png);
+  background-repeat: no-repeat;
+  background-size: 120px;
+  background-position-x: 50%;
+  background-position-y: 10%;
+  /* position: absolute; */
+  width: 300px;
+  height: 300px;
+  display: flex;
+  padding-top: 150px;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* margin-bottom: 30px;
+  margin-left: 50px;
+  background-color: white; */
+}
+.seat-id {
+  margin: 0;
+}
+.name-map {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* Center items vertically */
 }

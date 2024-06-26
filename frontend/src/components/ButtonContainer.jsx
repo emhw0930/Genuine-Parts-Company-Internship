@@ -72,12 +72,12 @@ const ButtonContainer = ({ seatNumber, initialLabel, placeholder, isHighlighted,
                     onClick={handleButtonClick} 
                     style={{
                         ...buttonStyle,
-                        ...(isHighlighted ? { background: '#646cff' } : {}),
+                        ...(isHighlighted ? { background: '#ff8977' } : {}),
                         ...(isMatchedDelayed ? { background: 'rgb(57, 57, 179)' } : {})
                     }}
                 />
                 {/* Display the button label */}
-                <div className={`label ${isEditing || isMatchedDelayed ? 'visible' : ''}`}>{buttonLabel}</div>
+                <div className={`label ${isEditing || isMatchedDelayed || isHighlighted? 'visible' : ''}`}>{buttonLabel}</div>
             </div>
             {/* Render an input field if in editing mode */}
             {isEditing && (

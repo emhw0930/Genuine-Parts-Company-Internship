@@ -8,9 +8,9 @@ export default function L3_Main() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
+  // const toggleDropdown = () => {
+  //   setIsDropdownOpen(!isDropdownOpen);
+  // };
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
@@ -18,7 +18,7 @@ export default function L3_Main() {
 
   return (
     <div className='all'>
-      <Header searchTerm={searchTerm} isDropdownOpen={isDropdownOpen} toggleDropdown={toggleDropdown} handleSearchChange={handleSearchChange}/>
+      <Header searchTerm={searchTerm} handleSearchChange={handleSearchChange}/>
       <L3 searchTerm={searchTerm} />
     </div>
   );

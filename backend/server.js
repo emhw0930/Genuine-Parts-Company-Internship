@@ -20,6 +20,6 @@ app.use('/api', seatRoutes);
 
 app.listen(PORT, async () => {
     await connectToMongoDB();
-    await seedDatabase();
+    // await seedDatabase();
     console.log(`Server Running on port ${PORT}`);
 });
